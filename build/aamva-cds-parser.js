@@ -9,6 +9,7 @@ class FieldParser {
       dateOfBirth: 'DBB',
       idNumber: 'DAQ',
       country: 'DCG',
+      state: 'DAJ',
     };
     this.data = data;
   }
@@ -75,6 +76,10 @@ class FieldParser {
 
   get country() {
     return this.parseString("country") || null;
+  }
+
+  get state() {
+    return this.parseString("state") || null;
   }
 }
 
@@ -291,6 +296,7 @@ class Parser {
       dateOfBirth: fieldParser.dateOfBirth,
       idNumber: fieldParser.idNumber,
       country: fieldParser.country,
+      state: fieldParser.state,
       version: this.version,
     };
   }

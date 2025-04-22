@@ -11,6 +11,7 @@ export class FieldParser {
       dateOfBirth: 'DBB',
       idNumber: 'DAQ',
       country: 'DCG',
+      state: 'DAJ',
     };
     this.data = data;
   }
@@ -77,5 +78,9 @@ export class FieldParser {
 
   get country() {
     return this.parseString("country") || null;
+  }
+
+  get state() {
+    return this.parseString("state") || null;
   }
 }

@@ -1,6 +1,6 @@
 {
   "name": "aamva-cds-parser",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Library to help parse data from PDF417 barcodes that meet the AAMVA Card Design Standard",
   "type": "module",
   "main": "build/aamva-cds-parser.js",

@@ -17,6 +17,8 @@ describe('AAMVA CDS Parser Tests', () => {
     assert.strictEqual(parsedData.lastName, 'LASTNAME');
     assert.strictEqual(parsedData.idNumber, '123456789');
     assert.strictEqual(parsedData.version, 3);
+    assert.strictEqual(parsedData.country, 'USA');
+    assert.strictEqual(parsedData.state, 'CO');
   });
 
   test('Basic Parsing - v9', () => {
@@ -29,5 +31,7 @@ describe('AAMVA CDS Parser Tests', () => {
     assert.strictEqual(parsedData.lastName, 'LASTNAME');
     assert.strictEqual(parsedData.idNumber, '123456789');
     assert.strictEqual(parsedData.version, 9);
+    assert.strictEqual(parsedData.country, 'USA');
+    assert.strictEqual(parsedData.state, 'CO');
   });
 }); 

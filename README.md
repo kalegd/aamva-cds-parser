@@ -31,6 +31,7 @@ console.log(aamvaData.lastName);
 | dateOfBirth    | Date of Birth            | String<YYYY-MM-DD> |
 | idNumber       | Customer ID Number       | String             |
 | country        | Country Identification   | String<CAN or USA> |
+| state          | 2 Letter State Code      | String             |
 | version        | Customer First Name      | Number             |
 
 Any attribute could be null due to the version used or because the company issuing the license did not follow the standard correctly
@@ -44,4 +45,5 @@ For a comprehensive list of AAMVA Element IDs across different versions, please 
 ### Credits
 
 Based off of https://github.com/joptimus/aamva-parser and my hatred of typescript
+
 Header procesing based off of https://github.com/benhovinga/aamva_barcode_library

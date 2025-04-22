@@ -78,6 +78,7 @@ class Parser {
       dateOfBirth: fieldParser.dateOfBirth,
       idNumber: fieldParser.idNumber,
       country: fieldParser.country,
+      state: fieldParser.state,
       version: this.version,
     };
   }
