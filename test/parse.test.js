@@ -16,6 +16,8 @@ describe('AAMVA CDS Parser Tests', () => {
     assert.deepStrictEqual(parsedData.middleNames, ['MIDDLENAME']);
     assert.strictEqual(parsedData.lastName, 'LASTNAME');
     assert.strictEqual(parsedData.idNumber, '123456789');
+    assert.strictEqual(parsedData.dateOfBirth, '1970-01-01');
+    assert.strictEqual(parsedData.expirationDate, '2027-01-01');
     assert.strictEqual(parsedData.version, 3);
     assert.strictEqual(parsedData.country, 'USA');
     assert.strictEqual(parsedData.state, 'CO');
@@ -30,6 +32,8 @@ describe('AAMVA CDS Parser Tests', () => {
     assert.deepStrictEqual(parsedData.middleNames, ['MIDDLENAME']);
     assert.strictEqual(parsedData.lastName, 'LASTNAME');
     assert.strictEqual(parsedData.idNumber, '123456789');
+    assert.strictEqual(parsedData.dateOfBirth, '1970-01-01');
+    assert.strictEqual(parsedData.expirationDate, '2027-01-01');
     assert.strictEqual(parsedData.version, 9);
     assert.strictEqual(parsedData.country, 'USA');
     assert.strictEqual(parsedData.state, 'CO');
