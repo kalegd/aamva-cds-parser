@@ -39,6 +39,10 @@ class FieldParser {
 
     if (isNaN(year) || isNaN(month) || isNaN(day)) return null;
 
+    year = year.toString().padStart(4, '0');
+    month = month.toString().padStart(2, '0');
+    day = day.toString().padStart(2, '0');
+
     return `${year}-${month}-${day}`;
   }
 
